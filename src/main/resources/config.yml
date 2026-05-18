@@ -1,0 +1,31 @@
+# MinecraftChat2TwitchMassage Configuration
+# Поддержка нескольких каналов Twitch
+
+# Настройки каналов Twitch
+twitch:
+  channels:
+    - name: "основной_канал"
+      username: "имя_бота"
+      oauth_token: "oauth:токен_бота"
+      enabled: true
+    - name: "второй_канал"
+      username: "имя_бота2"
+      oauth_token: "oauth:токен_бота2"
+      enabled: false
+
+# Основные настройки
+settings:
+  enabled: true
+  message_format: "[MC] %player%: %message%"
+  twitch_message_format: "&5[Twitch] &d%user%&f: %message%"
+
+# Настройки цензуры
+censor:
+  enabled: true
+  banned_words:
+    - "бля"
+    - "хуй"
+    - "пизд"
+    - "еба"
+    - "fuck"
+    - "shit"

@@ -1,0 +1,17 @@
+name: MinecraftChat2TwitchMassage
+version: 1.0.0
+main: com.ivteam.chat.MineraftChat2TwithMassage
+api-version: '1.21'
+author: IVTeam
+description: Двусторонний мост между чатом Minecraft и Twitch с поддержкой множества каналов
+
+commands:
+  twitchbridge:
+    description: Управление мостом Minecraft-Twitch
+    usage: /twitchbridge <help|reload|status|toggle|test|channel|format|censor>
+    permission: twitchbridge.admin
+
+permissions:
+  twitchbridge.admin:
+    description: Доступ к управлению мостом
+    default: op
